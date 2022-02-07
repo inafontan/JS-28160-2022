@@ -1,0 +1,471 @@
+// Esto es un comentario
+
+/*
+Esto es un comentatio multilinea 
+*/
+
+// var nombre = "Ina";
+// var edad = 39
+
+// console.log(nombre) // Este console va a monstrar lo de arriba
+
+// nombre ="Romina"
+
+// let nombre1 = "Ina"
+
+// console.log(nombre) // Este console va a mostrar lo de arriba que haya cambiado y lo demas
+// console.log(edad)
+
+// console.log(nombre1) 
+
+// let numero1 = 10
+// let numero2 = "5"
+// /* ASI LOS MUESTRA SEGUIDOS: 105 */
+
+// console.log(numero1 + numero2)
+// /* ESTO ES UN ERROR AUNQ JS NO LO MUESTRE COMO ERROR */
+
+// console.log("INA" + " " + "FONTAN")
+
+// const IVA = 1.21 /* A LA CONSTANTE (CONST) NO SE PUEDE CAMBIAR SU VALOR A LO LARGO DEL CÓDIGO - 
+//                     SIEMPRE APARECEN AL INICIO DEL CÓDIGO - PARA CAMBIARLA HAY Q IR A DONDE ESTA DECLARADA */
+
+// const IMPUESTO_PAIS = 1.30 /* LAS CONSTANTES EN MAYUSCULAS */
+// const RETENCION_GANANCIAS = 1.35
+
+// let dolar= 103
+
+// let dolar = Number (prompt("Ingrese el valor del dolar"))
+
+// numero1 = 20;
+
+// console.log(numero1 * IVA)
+// const dolarSolidario = dolar * IMPUESTO_PAIS * RETENCION_GANANCIAS
+
+// console-log(dolar * IMPUESTO_PAIS * RETENCION_GANANCIAS)
+// document.write(dolar * IMPUESTO_PAIS * RETENCION_GANANCIAS) /* DOCUMENT.WRITE MUESTRA EN EL HTML - NO SE USA, SALVO PARA PRUEBAS, NUNCA EN PROYECTO REAL*/
+
+// document.write("<h1> dolarSolidario </h1>")
+// document.write('<h1> ${dolarSolidario} </h1>')
+// document.write("<h1>" + dolarSolidario + "</h1>")
+
+// alert('El valor del dolar solidario es 180')
+// alert('Hola Coder')
+
+// let numero = 5
+
+// if (numero % 2 == 0) {
+//     console.log ("Numero par")
+// } else {
+//     console.log ("Numero impar")
+// }
+
+/*
+let numero = parseInt(prompt("Ingrese un número")) //parseFloat() para decimales
+
+//numero / 2 == 2.5
+//numero % 2 == 1
+console.log (numero)
+if(isNaN(numero)) {
+    console.log("Ingrese un número válido")
+} else {
+    if (numero % 2 == 0) {
+        console.log("Número par")
+    } else {
+        console.log("Número impar")
+}
+} 
+*/
+
+/*
+let texto = prompt ("Ingrese hola para saludar!")
+
+if(texto == "hola"){
+    alert("Hola que tal!")
+} else {
+    alert("Por favor salude")
+}
+*/
+
+// let numero1 = 10;
+// let numero2 = 20;
+
+/*
+if(numero1 == 8 && numero2 == 20) {
+    console.log("Numeros multiplos de 10")
+} else {
+    console.log("Puede ser que no sean múltiplos")
+}
+
+/* OPERADOR && AND "el resultado es verdadero si ambas expresiones son verdaderas"
+numero1 && numero2
+   v     v     v      
+   v     f     f   
+   f     f     v
+   f     f     f
+*/
+
+// if(numero1 == 7 || numero2 == 2) {
+//     console.log("V")
+// } else {
+//     console.log("F")
+// }
+
+/* OPERADOR || or  "el resultado es verdadero si alguna expresión es verdadera"
+numero1 && numero2
+   v     v     v      
+   v     v     f   
+   f     v     v
+   f     f     f
+*/
+
+// let numero1 = 10;
+// let numero2 = 20;
+
+// let mayorA10 = (numero1 >= 10) // > < >= <=
+// let menorA20 = (numero2 <= 20)
+
+// if(mayorA10 && menorA20) {
+//     console.log("V")
+// }
+
+// if (0 == "0") {
+//     console.log("V")
+// } else {
+//     console.log("F")
+// }
+
+/* ==  analiza dato (un numero 0 un string "0") 
+== igual simple */
+/* === analiza si el mismo valor y el mismo tipo. 
+=== es Estrictamente igual, comparten el valor. Generalmente, la mayor parte de las veces es más conveniente
+a la hora de comparar */
+
+// if (0 != "0") { 
+//     console.log("V")
+// } else {
+//     console.log("F")
+// }
+
+/* 
+0 != "0" es F porq no son distintos, analiza si son distintos / 
+0 !== "0" es V analiza que sean exactamente distintos != es distinto / !== estrictamente distinto */
+
+// let palabra = "Holaa"
+
+// if (!(palabra === "Hola")) {
+//     console.log("Me saludaste")
+// } else {
+//     console.log("No me saludaste")
+// }
+
+// Con el parentesis luego de ! niego lo que esta entre parentesis 
+
+/* !   palabra
+   F    V
+   V    F
+*/
+
+// 1 - 5 Desaprobado
+// 6 o 7 Aprobado Bien
+// 8 o 9 Aprobado Muy Bien
+// 10 Aprobado Excelente
+
+//Simulador de notas 
+// let nota = parseInt(prompt("Ingrese la nota del alumno"))
+
+// if (nota >= 1 && nota <= 5) {  //MAYOR O IGUAL
+//     console.log("El/la alumno/a esta desaprobado/a")
+// } else if (nota === 6 || nota === 7) {  // nota >= 6 && nota <= 7 --> esto tambien esta bien, pero como solo tomamos enteros, es mejor la otra forma
+//     console.log("El/la alumno/a esta aprobado con nota de Bien")
+// } else if (nota === 8 || nota === 8) {
+//     console.log("El/la alumno/a esta aprobado con nota de Muy Bien")
+// } else if (nota === 10) {
+//     console.log("El/la alumno/a esta aprobado con nota de Excelente")
+// } else {
+//     console.log("Nota no válida")
+
+// console.log(1)
+// console.log(2)
+// console.log(3)
+// console.log(4)
+// console.log(5)
+// console.log(6)
+// console.log(7) // forma correcta de hacerlo: 
+
+// for(let i = 0; i<6; i*i) { // i - i + 1
+//     console.log(i)
+// }
+
+// Ciclo por repetición. Cuando se sabe la cantidad de veces que se va a ejecutar. Se va a repetir x cantidad de veces
+
+/*
+let acumulador = 0;
+
+for(let i = 0; i<10; i++) {
+    let nota = parseInt(prompt("Ingrese una nota"))
+    acumulador += nota                              // acumulador = acumulador + nota
+}
+
+console.log(`El promedio de las notas es ${acumulador /10}`)
+
+*/
+
+// otro ejemplo
+/*
+let acumulador = 0;
+let cant = 10;
+for(let i = 0; i<cant; i++) {
+    let nota = parseInt(prompt("Ingrese una nota"))
+    acumulador += nota                              // acumulador = acumulador + nota
+}
+
+console.log(`El promedio de las notas es ${acumulador / cant}`)
+*/
+
+//Sentencia Break - Puede cortar ciclo de repetición
+/*
+for(let i=0; i < 10; i++) {
+   console.log(i)
+   if(i == 6) {
+       console.log("Adio")
+       break                // Corta la ejecución/sentencia del ciclo. Si no está pone adio pero sigue. 
+   }
+}
+*/
+
+//Sentencia continue - da un mensaje pero continua
+/*
+for(let i=0; i < 10; i++) {
+    console.log(i)
+    if(i == 6) {
+        console.log("Adio")
+        continue 
+    }
+ }
+ */
+
+ /* Ciclo While Si la condicion inicial es falsa, el codigo no se ejecuta nunca. el desea continuar seria false
+ (primero consulto luego ejecuto)
+let acumulador = 0;
+let deseaContinuar = true;
+let cantidadNotas = 0;
+
+while(deseaContinuar) {      //deseaContinuar == true
+    let nota = parseInt(prompt("Ingrese la nota"))
+    acumulador += nota
+    let confirmacion = prompt("¿Desea ingresar otra nota?")
+    cantidadNotas++
+    if(confirmacion == "no") {
+        deseaContinuar = false
+    }
+}
+
+console.log(`El promedio de las notas es ${acumulador / cantidadNotas}`)
+*/
+
+//Ciclo Do While - se ejecuta por lo menos 1 vez. Es preferible do while que while. Se garantiza q el usuario ingrese algun valor
+
+/*
+let acumulador = 0;
+let cantidadNotas = 0;
+
+do { 
+    let nota = parseInt(prompt("Ingrese la nota"))
+    acumulador += nota
+    var confirmacion = prompt("¿Desea ingresar otra nota?")   // va var porque esta dentro del do, si se declara fuera va let, no hay problema.
+    cantidadNotas++
+} while(confirmacion != "no")
+
+console.log(`El promedio de las notas es ${acumulador / cantidadNotas}`)
+
+*/
+
+/*
+let numero1;
+let numero2;
+let operador;
+
+do {
+    numero1 = parseFloat(prompt("Ingrese un numero"))
+    numero2 = parseFloat(prompt("Ingrese otro numero"))
+    operador = prompt("Ingrese una operación matemática (+,-,/,*)")
+} while((isNaN(numero1) || isNaN(numero2)) || (numero2 === 0 && operador == "/"))
+
+switch(operador) {  
+    case "+":                             // Para cada case un break, sino ejecuta todas las operaciones aunq ya se haya realizado una
+        console.log(numero1 + numero2)
+        break
+    case "-":
+        console.log(numero1 - numero2)
+        break
+    case "*":
+        console.log(numero1 * numero2)
+        break
+    case "/":
+        console.log(numero1 / numero2)
+        break
+    default:
+        console.log("Operador no válido")
+        break
+}
+*/
+
+//CLASE 4
+//Declaración de función
+
+/*function mostrarNombre() {                      //DECLARO LA FUNCIÓN
+    console.log("El profe es Fran!")
+}
+
+mostrarNombre()                                //EJECUTO LA FUNCION - Ejecuta el console.log - 
+                                                    Tantas veces como se lo llame a mostrarNombre
+*/
+
+//Función con Parámetro - Recibe cualquier tipo de dato
+/*function mostrarNombre(nombre) {                      //DECLARO LA FUNCIÓN
+    console.log(`El profe es ${nombre}`)
+}
+
+mostrarNombre("Juan") 
+mostrarNombre("Roberto") 
+mostrarNombre("Pedro") 
+mostrarNombre("Dibu") 
+mostrarNombre("Messi")  
+*/
+
+//Función SUma
+/*
+function suma (numero1, numero2) {                      //Acá declaro la función, con coma separo parametros
+    console.log(numero1 + numero2)                      //Los parametros funcionan dentro de la función
+}
+
+let numero1 = parseFloat(prompt("Ingrese un numero"))       //Acá son variables - se pueden usar el mismo 
+let numero2 = parseFloat(prompt("Ingrese otro numero"))     //nombre sin problema - ESTE ES EL MENSAJE DE INGRESO DE DATOS
+                                                            //Va con la posicion. Acá numero1 podria ser num1. 
+suma(numero1 , numero2)                                     //Acá ejecuto la función
+*/
+
+// let acumuladoSuma = 0;
+
+// function suma (numero1, numero2) { 
+//     return numero1 + numero2
+// }
+
+// let numero1 = parseFloat(prompt("Ingrese un numero"))
+// let numero2 = parseFloat(prompt("Ingrese otro numero"))
+
+// console.log(suma(numero1, numero2))
+// acumuladoSuma = suma(numero1, numero2)
+ 
+//SCOPE
+//const IVA = 1.21                   //Acá o dentro de la función funciona igual. 
+/*
+function calculoIVA(producto) {
+    const IVA = 1.21
+    return producto * IVA
+}
+
+console.log(calculoIVA(100))
+console.log(IVA)                    //No funciona porq esta creado dentro de la función (ambito local), 
+                                    //sólo puede ser analizada dentro de la función, por fuera no va, no existe.
+*/
+
+//FUNCIÓN ANONIMA    --- por lo general se crean en una sola linea. 
+/*
+const suma = function(num1, num2) { return num1 + num2}    //elijo constante para q guarde el dato porque no se modifica
+const resta = function(num1, num2) { return num1 - num2}        //return devuelve lo que sucede entre 2 parametros
+const division = function(num1, num2) { return num1 / num2}
+const multiplicacion = function(num1, num2) { return num1 * num2}
+
+console.log(suma(5,10))
+console.log(resta(5,10))
+console.log(division(5,10))
+console.log(multiplicacion(5,10))
+
+*/
+
+//FUNCIÓN FLECHA   -- codigo de una sola linea  --- SE CREA SIEMPRE CON CONST PORQ HAY Q ALMACENAR EL VALOR Y NO SE MODIFICA. 
+/*
+const suma = (num1, num2) => num1 + num2  
+const resta = (num1, num2) => num1 - num2        
+const division = (num1, num2) => num1 / num2
+const multiplicacion = (num1, num2) => num1 * num2
+
+console.log(suma(5,10))
+console.log(resta(5,10))
+console.log(division(5,10))
+console.log(multiplicacion(5,10))
+*/
+
+/*
+const multiplicacion = (num1, num2) => num1 * num2
+
+let numero1 = parseFloat(prompt("Ingrese un numero"))
+let numero2 = parseFloat(prompt("Ingrese otro numero"))
+
+let resultado = multiplicacion(numero1, numero2)
+console.log(resultado)
+*/
+
+//EJEMPLOS EJERCICIOS
+// const valorCuotas = (precioProd, cuotasProd) => precioProd / cuotasProd
+
+// let precio = parseFloat(prompt('indique el precio del producto'))
+// let cuotas = parseInt(prompt('indique la cantidad de cuotas'))
+
+// console.log(valorCuotas(precio,cuotas))
+
+
+/*
+let numero1 = parseInt(prompt("Ingrese un numero"))
+let numero2 = parseInt(prompt("Ingrese otro numero"))
+
+
+const suma = (num1, num2) => num1 + num2;
+
+console.log(suma(numero1, numero2))
+*/
+/*
+let producto =parseFloat(prompt("Ingrese valor de producto "))
+const Impuesto = 1.21;
+
+const porcentaje = (num1, num2) => num1 * num2
+console.log(porcentaje(producto, Impuesto))
+*/
+/*
+let valorDolar = 105;
+let cantDolar = parseInt(prompt("Ingrese la cantidad de dolares a cambiar"));
+
+const cambioDolar = (valorDolar,cantDolar) => valorDolar * cantDolar;
+
+console.log(`usted recibira ${cambioDolar(valorDolar,cantDolar)} pesos argentinos`);
+*/
+
+/*
+let numero1 = parseInt(prompt("Ingrese un numero:"));
+let numero2 = parseInt(prompt("Ingrese otro numero:"));
+const suma = (numero1, numero2) => numero1 + numero2;
+alert(suma(numero1, numero2));                                  //MUESTRA EL RESULT POR ALERT
+*/
+
+/*
+const multiplicacion = ($, IVA) => $ * IVA
+
+let precio = parseFloat(prompt("Ingrese un precio"))
+let IVA = parseFloat(prompt("IVA"))
+
+let resultado = multiplicacion(precio, IVA)
+console.log(resultado)
+*/
+
+//MI EJEMPLO  --- SUBIR ESTO O SIMILAR CON EL DESAFIO ENTREGABLE. 
+/*
+const resta = (numero1, numero2) => numero1 - numero2
+
+let numero1 = parseInt(prompt("Ingrese año actual"))
+let numero2 = parseInt(prompt("Ingrese su año de nacimiento")) 
+
+let resultado = resta(numero1, numero2)
+console.log(resultado)
+*/
