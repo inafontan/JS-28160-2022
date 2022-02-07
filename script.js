@@ -30,6 +30,3 @@ if(texto === "Profesorado"){
 
     console.log ("Usted se Inscribió correctamente")
 }
-     
-
-                                
