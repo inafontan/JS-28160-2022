@@ -12,7 +12,7 @@ if(texto === "Profesorado"){
     alert(`Resta abonar cuotas ${cuotasPagas(totalCuotas,numero1)}`)
 
     let acumulador = 0;
-    let cantidadNotas = 5;
+    let cantidadNotas = 0;
 
     do { 
     let nota = parseInt(prompt("Para conocer su promedio, ingrese las notas"))
@@ -30,3 +30,4 @@ if(texto === "Profesorado"){
 
     console.log ("Usted se Inscribió correctamente")
 }
+
