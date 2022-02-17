@@ -1,3 +1,5 @@
+//DESAFIO INTERACTIVO
+/*
 let texto = prompt ("Ingrese su carrera para continuar! (Profesorado / Ciclo)")
 
 if(texto === "Profesorado"){
@@ -30,4 +32,37 @@ if(texto === "Profesorado"){
 
     console.log ("Usted se Inscribió correctamente")
 }
+*/
 
+//DESAFO COMPLEMENTARIO - INCORPORAR ARRAYS
+
+class Miel {
+    constructor(nombre, cantidad, precio) {
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.precio = parseFloat(precio);
+    }
+}
+const miel = [];
+miel.push(new Miel("Miel Común", "150 gr", 300));
+miel.push(new Miel("Miel con enta", "250 gr", 500));
+miel.push(new Miel("Miel Líquida", "100 gr", 200));
+localStorage.setItem('miel', JSON.stringify(miel));
+
+let almacenadas = localStorage.getItem('miel');
+if (almacenadas != null) {
+    let array = JSON.parse(almacenadas);
+    let salida = 'Elegir Miel \n';
+    for (let index = 0; index < array.length; index++) {
+        salida += index + ' -> ' + array[index].nombre + ' ' + array[index].cantidad + ' $ ' + array[index].precio + '\n';
+    }
+    alert(salida);
+    let eleccion = parseInt(prompt('Ingrese Miel'));
+    if ((eleccion >= 0) && (eleccion < array.length)) {
+        alert("Miel elegida " + array[eleccion].nombre)
+    } else {
+        alert("ERROR DE SELECCION");
+    }
+}
+
+alert("Su pedido ha sido reservado");

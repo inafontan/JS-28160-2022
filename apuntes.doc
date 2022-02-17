@@ -469,3 +469,23 @@ let numero2 = parseInt(prompt("Ingrese su año de nacimiento"))
 let resultado = resta(numero1, numero2)
 console.log(resultado)
 */
+
+OBJETOS
+
+class Alumno{
+    constructor(dni, apellido, nombre, carrera){
+        this.dni = dni;
+        this.apellido = apellido;
+        this.nombre = nombre;
+        this.carrera = carrera;
+    }
+    leer() {
+        console.log((this.dni) + " " + "Este alumno es de la carrera" + " " + (this.carrera) + " " + "y se llama" + " " + (this.apellido) + " " + (this.nombre));
+    }
+}
+let alumno1 = new Alumno(12345678, "Amoedo", "Benjamín","Profesorado Técnico");
+alumno1.leer ();
+let alumno2 = new Alumno(98745632, "Amoedo Encina", "Daniel","Formación Docente");
+alumno2.leer ();
+let alumno3 = new Alumno(25852258, "Fontán", "Roxana","JS");
+alumno3.leer ();
