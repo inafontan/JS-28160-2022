@@ -34,7 +34,7 @@ if(texto === "Profesorado"){
 }
 */
 
-//DESAFO COMPLEMENTARIO - INCORPORAR ARRAYS
+//DESAFIO COMPLEMENTARIO - INCORPORAR ARRAYS
 
 class Miel {
     constructor(nombre, cantidad, precio) {

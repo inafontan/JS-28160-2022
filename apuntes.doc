@@ -470,7 +470,7 @@ let resultado = resta(numero1, numero2)
 console.log(resultado)
 */
 
-OBJETOS
+OBJETOS ???
 
 class Alumno{
     constructor(dni, apellido, nombre, carrera){
