@@ -45,7 +45,7 @@ class Miel {
 }
 const miel = [];
 miel.push(new Miel("Miel Común", "150 gr", 300));
-miel.push(new Miel("Miel con enta", "250 gr", 500));
+miel.push(new Miel("Miel con Menta", "250 gr", 500));
 miel.push(new Miel("Miel Líquida", "100 gr", 200));
 localStorage.setItem('miel', JSON.stringify(miel));
 
