@@ -60,8 +60,6 @@ if (almacenadas != null) {
     let eleccion = parseInt(prompt('Ingrese Miel'));
     if ((eleccion >= 0) && (eleccion < array.length)) {
         alert("Miel elegida: " + array[eleccion].nombre)
-    } else {
-        alert("ERROR DE SELECCION");
     }
 }
 
